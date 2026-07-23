@@ -21,3 +21,7 @@ object Logic {      // this is not class defination the "object" keyword is used
     println(s"Block result: $complexResult")
   }
 }
+
+
+// wrapping a whole class into an object --> encapsulation 
+
