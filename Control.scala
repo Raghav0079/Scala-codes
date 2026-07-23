@@ -1,4 +1,4 @@
-object Logic {
+object Logic {      // this is not class defination the "object" keyword is used to treat the code as a class for the compiler .
   def main(args: Array[String]): Unit = {
     println("--- 2. Logic as Expressions ---")
     
