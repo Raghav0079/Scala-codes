@@ -1,12 +1,12 @@
-class Person {
+package overriding_lab
 
+class Person {
   def speak(): Unit = {
     println("I am a person")
   }
 }
 
 class Student extends Person {
-
   override def speak(): Unit = {
     println("I am a student")
   }
@@ -14,9 +14,7 @@ class Student extends Person {
 
 object Main {
   def main(args: Array[String]): Unit = {
-
     val s = new Student()
-
     s.speak()
   }
 }
