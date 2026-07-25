@@ -1,4 +1,9 @@
-def greet(name: String): Unit =
-  println(s"Hello, $name from Scala 3!")
+object Hello { // Matches Hello.scala
+  def greet(name: String): Unit = {
+    println(s"Hello, $name from Scala 2!")
+  }
 
-greet("Raghav")
+  def main(args: Array[String]): Unit = {
+    greet("Raghav")
+  }
+}
