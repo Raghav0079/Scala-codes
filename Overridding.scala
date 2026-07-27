@@ -12,9 +12,13 @@ class Student extends Person {
   }
 }
 
+
 object Main {
   def main(args: Array[String]): Unit = {
     val s = new Student()
     s.speak()
   }
 }
+
+
+// when using inheritance and redefining a method we use overridding .
