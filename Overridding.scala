@@ -22,3 +22,6 @@ object Main {
 
 
 // when using inheritance and redefining a method we use overridding .
+// in overridding classes and objects is not compulsory it can be done using simple functions also 
+// in polymorphism its compulsory to create classes and objects .
+
