@@ -2,7 +2,7 @@
 // 1. create a program for single level inheritance
 
 class Car(var name: String, var gates: Int) {
-    def speed(): Unit = println("max speed of car")
+    def speed(): Unit = println("max speed of car is 150 kmph")
 }
 
 class Sedan(name: String, gates: Int, var model: String) extends Car(name, gates)
