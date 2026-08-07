@@ -1,0 +1,5 @@
+// regex - regular expressions - used in pattern matching 
+a pattern is specified and the input is checked against that pattern .   match case type problems 
+ex - date pattern matching 
+
+
