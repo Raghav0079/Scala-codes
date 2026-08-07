@@ -4,3 +4,9 @@ ex - date pattern matching
 
 
 // exception handling  -- (try - catch - finally block)
+conditions which the compiler cannot handle . runtime errors 
+solved using try - catch - finally block 
+finally block is not compulsory 
+try block - to write the code which may throw an excewption
+catch block - to handle the exception 
+finally block - to write code whcih is to be executed whether exception ocuurs or not 
