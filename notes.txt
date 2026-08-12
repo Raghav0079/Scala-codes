@@ -10,3 +10,14 @@ finally block is not compulsory
 try block - to write the code which may throw an excewption
 catch block - to handle the exception 
 finally block - to write code whcih is to be executed whether exception ocuurs or not 
+when not known what kind of error there is  just use "Exception" keyword
+
+// constructor - a function with name of class name 
+gets called when object is initialized 
+helps in inheritance for private variables 
+// destructor - to refresh the memory after using up of variables 
+
+// single and multilevel are only achivable by default in java and scala
+multiple and hierachical ( achivable sometimes ) is achivable in scala nad java
+for multiple being achivable   -> interface in java & trait in scala
+
