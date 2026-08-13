@@ -3,10 +3,10 @@ trait Greater{
     def greet() :String =  s"hello , $name"
 }
 
-class Employee( val name : String) extends Greater
+//class Employee( val name : String) extends Greater  // abstract class 
 
 object Main{
-    def main (args: Array[String]) : Unit = {
+    def main (args: Array[String]) : Unit = { 
         val employee = new Employee("Rahul")
         println(employee.name)
         println(employee.greet())
