@@ -19,7 +19,7 @@ helps in inheritance for private variables
 
 // single and multilevel are only achivable by default in java and scala
 multiple and hierachical ( achivable sometimes ) is achivable in scala nad java
-for multiple being achivable   -> interface in java & trait in scala
+for multiple being achivable   -> interface in java & trait in scala and to access the private vars from parenmt class to child class 
 
 // access modifiers 
 to decide what % of data to be accesssed by user , manager and owner
