@@ -25,7 +25,7 @@ for multiple being achivable   -> interface in java & trait in scala and to acce
 to decide what % of data to be accesssed by user , manager and owner
 public , private - pkg & espar , protected
 
-// constructors - two types -> deafault - ( uses a this :: keyword to call another constructor prevents code from crashing in case of null values) 
+// constructors( never private ) - two types -> deafault - ( uses a this :: keyword to call another constructor prevents code from crashing in case of null values) 
                             type casting - changing from one data type to another data type 
                                             types of type casting - 1 . implicit -  done by deafult constructor     
                                                                     2. explicit - done forcefully by user 
@@ -34,4 +34,5 @@ public , private - pkg & espar , protected
                             parametrized- variables can be initialized in the constructor itself and can be used in the class ( saving memory and time)
                                         - also used to craete package of vars and initialize directly in the class 
     - constructor is only defined for a class nothing else
-
+    - constructor can't be defined before function / class definition 
+    - also a concept of encapsulation
