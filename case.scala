@@ -1,7 +1,9 @@
-case class Student ( name : STring , age : Int)
+case class Student(name: String, age: Int)
 
-object Mainn extends Student{
-    val s1 = Student("abc",20)
-    val s2 = Student("xyz",30)
+object Main extends App {
+  val s1 = Student("abc", 20)
+  val s2 = Student("xyz", 30)
+
+  println(s1)
+  println(s2)
 }
-
