@@ -36,3 +36,6 @@ public , private - pkg & espar , protected
     - constructor is only defined for a class nothing else
     - constructor can't be defined before function / class definition 
     - also a concept of encapsulation
+
+
+// abstract - function which can be override 
