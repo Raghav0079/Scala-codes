@@ -39,3 +39,5 @@ public , private - pkg & espar , protected
 
 
 // abstract - function which can be override 
+objects of traits cannot be created directly ( instantiated ) but can be done with help of a class
+abstract class cannot be instantiated at all ( no object creation)

@@ -1,13 +1,19 @@
-abstract class Person {
-    def age(): Unit
+abstract class Person {   // abstract class 
+    def age(): Unit // abstract method 
 }
 
 class Student extends Person {
+    
     override def age(): Unit = {
         println("student age is 20")
     }
 }
 
+class Employee extends Person{
+    override def age(): Unit = {
+        println("employee age is 20")
+    }
+}
 object Main {
     def main(args: Array[String]): Unit = {
         val student = new Student()
