@@ -2,3 +2,5 @@
 .vscode/
 .scala-build/
 .bloop/
+.json/
+
