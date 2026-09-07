@@ -7,3 +7,6 @@ object Main extends App{
     println(s1)
     println(s2)
 }
+
+// app extends case class 
+// case class extends main function 
