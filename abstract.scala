@@ -1,27 +1,9 @@
-abstract class Person {   // abstract class 
-    def age(): Unit // abstract method 
-}
+case class Student(name: String , age : Int)
 
-class Student extends Person {
-    
-    override def age(): Unit = {
-        println("student age is 20")
-    }
-}
+object Main extends App{
+    val s1 = Student("Raj" , 20)
+    val s2 = Student("Ajay" , 23)
 
-class Employee extends Person{
-    override def age(): Unit = {
-        println("employee age is 20")
-    }
-}
-object Main {
-    def main(args: Array[String]): Unit = {
-        val student = new Student()
-        
-        // Polymorphic reference: referring to a concrete Student as a Person
-        val person: Person = new Student() 
-        
-        student.age()
-        person.age()
-    }
+    println(s1)
+    println(s2)
 }

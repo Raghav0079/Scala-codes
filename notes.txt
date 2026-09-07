@@ -43,3 +43,4 @@ objects of traits cannot be created directly ( instantiated ) but can be done wi
 abstract class cannot be instantiated at all ( no object creation)
 
 // case class - a class used to create objects of a class with the help of a constructor and can be used to create multiple objects of a class with different values ( used in pattern matching )
+to store soemthing permanently in scala
