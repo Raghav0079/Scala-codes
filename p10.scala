@@ -1,16 +1,26 @@
 import scala.annotation.tailrec
 
-def factorial( n : BigInt) : BigInt = 
-    if ( n<=1) 1 else n * factorial(n-1)
+object Main {
 
-def factorialTailRec(n: BigInt): BigInt = {
-  @tailrec
-  def loop(n: BigInt, acc: BigInt): BigInt = 
-    if (n <= 1) acc else loop(n - 1, acc * n)
-  
-  loop(n, 1)
+  // 1. Standard (Non-Tail) Recursive Factorial
+  def factorial(n: Int): BigInt = {
+    if (n <= 1) 1
+    else n * factorial(n - 1) // Multiplication happens AFTER returning
+  }
+
+  // 2. Tail-Recursive Factorial
+  def factorialTailRec(n: Int): BigInt = {
+    @tailrec
+    def loop(current: Int, acc: BigInt): BigInt = {
+      if (current <= 1) acc
+      else loop(current - 1, acc * current) // Pure tail call
+    }
+
+    loop(n, 1)
+  }
+
+  def main(args: Array[String]): Unit = {
+    println(s"Standard: ${factorial(5)}")         // 120
+    println(s"Tail-Recursive: ${factorialTailRec(5)}") // 120
+  }
 }
-
-
-println(factorial(5))        
-println(factorialTailRec(5)) 
