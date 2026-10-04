@@ -1,0 +1,4 @@
+Scala is a functional programming language.
+Scala is also an object-oriented language.
+This file contains Scala code examples.
+Scala is great for data processing.
