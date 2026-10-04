@@ -1,5 +1,4 @@
 import scala.io.StdIn
-
 object Experiment4 {
   def main(args: Array[String]): Unit = {
     println("========== EXPERIMENT 4 ==========")
@@ -11,10 +10,7 @@ object Experiment4 {
     matrixOperations()
     linearSearch()
   }
-
-  // ==========================================
   // (a) String length, upper/lower case, substring
-  // ==========================================
   def stringOperations(): Unit = {
     println("\n--- (a) Basic String Operations ---")
     val text = "Scala Programming"
@@ -24,10 +20,7 @@ object Experiment4 {
     println(s"Lowercase: ${text.toLowerCase}")
     println(s"Substring (0 to 5): '${text.substring(0, 5)}'")
   }
-
-  // ==========================================
   // (b) Check whether a given string is a palindrome
-  // ==========================================
   def checkPalindrome(): Unit = {
     println("\n--- (b) Palindrome Check ---")
     val testStr = "Racecar"
@@ -38,10 +31,7 @@ object Experiment4 {
     if (isPalindrome) println("Result: It is a palindrome.")
     else println("Result: It is not a palindrome.")
   }
-
-  // ==========================================
   // (c) Count vowels and consonants in a string
-  // ==========================================
   def countVowelsConsonants(): Unit = {
     println("\n--- (c) Vowels and Consonants Count ---")
     val sentence = "Hello Scala World"
@@ -53,10 +43,7 @@ object Experiment4 {
     println(s"Number of Vowels: $vowelsCount")
     println(s"Number of Consonants: $consonantsCount")
   }
-
-  // ==========================================
   // (d) Array of 10 integers: sum, max, min, average
-  // ==========================================
   def arrayBasicOperations(): Unit = {
     println("\n--- (d) Array Sum, Max, Min, Average ---")
     val numbers = Array(15, 22, 8, 42, 16, 50, 4, 9, 33, 11)
@@ -72,10 +59,7 @@ object Experiment4 {
     println(s"Minimum: $min")
     println(s"Average: $avg")
   }
-
-  // ==========================================
   // (e) Reverse and sort array without modifying original
-  // ==========================================
   def arrayReverseSortAccess(): Unit = {
     println("\n--- (e) Reverse, Sort and Access ---")
     val originalArray = Array(5, 2, 8, 1, 9)
@@ -92,10 +76,7 @@ object Experiment4 {
     println(s"Element at index 0: ${originalArray(0)}")
     println(s"Element at index 3: ${originalArray(3)}")
   }
-
-  // ==========================================
   // (f) 2D Array (3x3 Matrix), print rows, diagonal sum
-  // ==========================================
   def matrixOperations(): Unit = {
     println("\n--- (f) 3x3 Matrix and Diagonal Sum ---")
     // Creating a 3x3 matrix
@@ -118,10 +99,7 @@ object Experiment4 {
     
     println(s"Sum of primary diagonal elements (1 + 5 + 9): $diagonalSum")
   }
-
-  // ==========================================
   // (g) Linear Search
-  // ==========================================
   def linearSearch(): Unit = {
     println("\n--- (g) Linear Search ---")
     val arr = Array(10, 25, 30, 45, 50)

@@ -1,5 +1,4 @@
 import scala.annotation.tailrec
-
 object exp3 {
   def main(args: Array[String]): Unit = {
     println("========== EXPERIMENT 3 ==========")
@@ -77,9 +76,7 @@ object exp3 {
     println(s"7th Fibonacci number (0-indexed): ${fibonacci(7)}")
   }
 
-  // ==========================================
   // (d) Tail Recursion
-  // ==========================================
   @tailrec
   def factorialTail(n: Int, accumulator: Long = 1): Long = {
     if (n <= 1) accumulator
@@ -92,10 +89,7 @@ object exp3 {
     println(s"Tail-Recursive Factorial of 6: ${factorialTail(6)}")
     println("Note: Tail recursion prevents StackOverflowError for large 'n' because the compiler optimizes it into a loop.")
   }
-
-  // ==========================================
   // (e) Anonymous Function (Lambda)
-  // ==========================================
   def demoAnonymousFunction(): Unit = {
     println("\n--- (e) Anonymous Function ---")
     
@@ -106,14 +100,10 @@ object exp3 {
     println(s"Square of 8 is: ${square(8)}")
     println(s"Is 14 even? ${isEven(14)}")
   }
-
-  // ==========================================
   // (f) Higher-Order Functions
-  // ==========================================
   def applyTwice(f: Int => Int, x: Int): Int = {
     f(f(x))
   }
-
   def demoHigherOrderFunction(): Unit = {
     println("\n--- (f) Higher-Order Function ---")
     val doubleIt = (x: Int) => x * 2
@@ -126,9 +116,7 @@ object exp3 {
     println(s"Applying '+10' twice to 5 yields: $result2")
   }
 
-  // ==========================================
   // (g) Currying and Nested (Local) Functions
-  // ==========================================
   // Curried function definition
   def multiply(a: Int)(b: Int): Int = a * b
 

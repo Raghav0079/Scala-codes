@@ -1,6 +1,5 @@
 import scala.collection.mutable.ListBuffer
 import scala.collection.mutable.Map
-
 object exp5 {
   def main(args: Array[String]): Unit = {
     println("========== EXPERIMENT 5 ==========")
@@ -12,10 +11,7 @@ object exp5 {
     tupleAndZip()
     mutableVsImmutable()
   }
-
-  // ==========================================
   // (a) Immutable List operations
-  // ==========================================
   def listOperations(): Unit = {
     println("\n--- (a) Immutable List Operations ---")
     val list1 = List(10, 20, 30, 40, 50)
@@ -35,10 +31,7 @@ object exp5 {
     // Concatenation
     println(s"Concatenate lists (:::) -> ${list1 ::: list2}")
   }
-
-  // ==========================================
   // (b) Mutable ListBuffer operations
-  // ==========================================
   def mutableBufferOperations(): Unit = {
     println("\n--- (b) ListBuffer (Mutable) Operations ---")
     val buffer = ListBuffer("Apple", "Banana")
@@ -54,10 +47,7 @@ object exp5 {
     // Or buffer.remove(0) to remove by index
     println(s"After removing 'Apple': $buffer")
   }
-
-  // ==========================================
   // (c) Set operations (Union, Intersection, Difference)
-  // ==========================================
   def setOperations(): Unit = {
     println("\n--- (c) Set Operations ---")
     // Note how duplicate '2's and '3's are automatically removed
@@ -71,10 +61,7 @@ object exp5 {
     println(s"Intersection (set1 & set2): ${set1.intersect(set2)}")
     println(s"Difference (set1 &~ set2): ${set1.diff(set2)}")
   }
-
-  // ==========================================
   // (d) Map operations (Mutable)
-  // ==========================================
   def mapOperations(): Unit = {
     println("\n--- (d) Map Operations (Student Marks) ---")
     // Using scala.collection.mutable.Map for in-place modifications
@@ -92,10 +79,7 @@ object exp5 {
       println(s"  Student: $name, Marks: $mark")
     }
   }
-
-  // ==========================================
   // (e) Safe Map access using getOrElse and contains
-  // ==========================================
   def mapSafeAccess(): Unit = {
     println("\n--- (e) Safe Map Access ---")
     val studentMarks = Map("Alice" -> 95, "Charlie" -> 92)
@@ -112,10 +96,7 @@ object exp5 {
     val marks = studentMarks.getOrElse("Bob", "N/A (Student not found)")
     println(s"Trying to get Bob's marks using 'getOrElse': $marks")
   }
-
-  // ==========================================
   // (f) Tuples and Zip
-  // ==========================================
   def tupleAndZip(): Unit = {
     println("\n--- (f) Tuples and Zip ---")
     // Creating a Tuple2
@@ -130,10 +111,7 @@ object exp5 {
     val zippedList = names.zip(scores) 
     println(s"Zipped List of Tuples: $zippedList")
   }
-
-  // ==========================================
   // (g) Mutable vs Immutable Comparison
-  // ==========================================
   def mutableVsImmutable(): Unit = {
     println("\n--- (g) Mutable vs Immutable Collections ---")
     

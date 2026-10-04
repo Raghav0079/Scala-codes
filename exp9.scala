@@ -1,11 +1,6 @@
 import scala.util.{Try, Success, Failure}
-
-// Supporting Case Class for part (b)
 case class User(name: String, role: String)
-
-// Custom Exception for part (f)
 class InvalidAgeException(message: String) extends Exception(message)
-
 object exp9{
   def main(args: Array[String]): Unit = {
     println("========== EXPERIMENT 9 ==========")
@@ -40,25 +35,21 @@ object exp9{
     matchEverything(3.14)
   }
 
-  // ==========================================
+
   // (b) Pattern matching on List, Tuple, Case Class
-  // ==========================================
   def demoCollectionsAndCaseClasses(): Unit = {
     println("\n--- (b) Pattern Matching on List, Tuple, Case Class ---")
-    
     // 1. List
     val list = List(10, 20, 30)
     list match {
       case head :: second :: tail => println(s"List match: head=$head, second=$second, rest=$tail")
       case _                      => println("Unknown list structure")
     }
-
     // 2. Tuple
     val tuple = ("Alice", 85)
     tuple match {
       case (name, score) => println(s"Tuple match: Name is $name, Score is $score")
     }
-
     // 3. Case Class
     val user = User("Bob", "Admin")
     user match {
@@ -67,9 +58,7 @@ object exp9{
     }
   }
 
-  // ==========================================
   // (c) Option[Int]: match, getOrElse, map
-  // ==========================================
   def safeDivide(num: Int, den: Int): Option[Int] = {
     if (den == 0) None else Some(num / den)
   }
@@ -78,13 +67,11 @@ object exp9{
     println("\n--- (c) Option Type ---")
     val validDiv = safeDivide(10, 2)
     val invalidDiv = safeDivide(10, 0)
-
     // Using match
     validDiv match {
       case Some(value) => println(s"Match (10/2): Success, result is $value")
       case None        => println("Match (10/2): Error, division by zero")
     }
-
     // Using getOrElse
     val result2 = invalidDiv.getOrElse(-1)
     println(s"getOrElse (10/0): fallback to default -> $result2")
@@ -94,9 +81,7 @@ object exp9{
     println(s"map (10/2) * 2: $doubledOption")
   }
 
-  // ==========================================
   // (d) try, catch, finally
-  // ==========================================
   def demoTryCatchFinally(): Unit = {
     println("\n--- (d) try, catch, finally ---")
     val badString = "123a"
@@ -112,9 +97,7 @@ object exp9{
     }
   }
 
-  // ==========================================
   // (e) scala.util.Try with Success and Failure
-  // ==========================================
   def demoTrySuccessFailure(): Unit = {
     println("\n--- (e) scala.util.Try ---")
     val stringList = List("10", "20", "abc", "30")
@@ -127,10 +110,7 @@ object exp9{
       }
     }
   }
-
-  // ==========================================
   // (f) Custom Exception
-  // ==========================================
   def checkAge(age: Int): Unit = {
     if (age < 18) {
       throw new InvalidAgeException(s"Age $age is too young. Must be 18 or older.")

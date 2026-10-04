@@ -1,5 +1,4 @@
 import scala.io.StdIn
-
 object exp1 {
   def main(args: Array[String]): Unit = {
     
@@ -41,16 +40,13 @@ object exp1 {
     
     // Type inference: Scala automatically infers 'inferredString' is of type String
     val inferredString = num1.toString 
-
     val sum = num1 + num2
     val diff = num1 - num2
     val prod = num1 * num2
     val div = num1 / num2
     val mod = num1 % num2
-
     val isGreater = num1 > num2
     val isEqual = num1 == num2
-
     val bothPositive = (num1 > 0) && (num2 > 0)
     val eitherPositive = (num1 > 0) || (num2 > 0)
 
